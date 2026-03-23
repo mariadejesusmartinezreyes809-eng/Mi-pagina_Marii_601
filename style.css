@@ -1,17 +1,17 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:aliceblue;
+    background-color: rgb(238, 240, 235);
     margin: 0;
     line-height: 1.6;
 }
 
 
 header { 
-    background-color: fuchsia;
+    background-color:  rgb(123, 4, 242);
     color:white;
     text-align: center;
     padding: 30px 20px;
-}
+}s
 
 nav {
     background-color: #34495e;
@@ -20,7 +20,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: rgb(159, 82, 236);
     text-decoration: none;
     margin: 015px;
     font-weight: bold;
@@ -31,7 +31,7 @@ nav a:hover {
 }
 
 section {
-    background-color:rebeccapurple;
+    background-color:rgb(159, 82, 236);
     margin: 20px auto;
     padding: 20px;
     width: 80%;
