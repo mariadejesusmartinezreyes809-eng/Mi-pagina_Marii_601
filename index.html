@@ -1,63 +1,170 @@
-     <!doctype html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi primera pagina web</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Mi Página Personal</h1>
-    </header>
 
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#pec">Proyecto PEC</a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi primera pagina web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <img
-        src="img/ACT2_Tarjeta_Digital_Mariii_Grupo 601.png"
-        alt="Foto personal"
-        width="350"
-        height="200"
-      />
+<body>
+  <header>
+    <h1>Mi Página Personal</h1>
+  </header>
 
-      <p>Hola, mi nombre es Maria de Jesús.</p>
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#pec">Proyecto PEC</a>
+    <a href="#centrointeractivo">Centro Interactivo </a>
+  </nav>
 
-      <p>Soy estudiante en el CECYTE Emsad-35.</p>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modo Oscuro</title>
 
-      <p>Me gusta lo que tiene que ver con Salud.</p>
+<style>
+    body{
+        background: white;
+        color: black;
+        font-family: Arial, sans-serif;
+        transition: 0.3s;
+        text-align: center;
+        padding-top: 50px;
+    }
 
-      <!-- <img src="imagen.jpg" alt="Descripción de la imagen"> -->
-    </section>
+    /* Estilo del modo oscuro */
+    .dark{
+        background: #121212;
+        color: white;
+    }
 
-    <section id="pec">
-      <h2>Proyecto Escolar Comunitario</h2>
+    button{
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+</head>
 
-      <h3>Huellas: cuidado animal y salud comunitaria</h3>
-      <img src="img/Actividad_4_Baner_601_Marii.png" alt="Baner" width="350px" height="200px">
+<body>
 
-      <p>
-        Este proyecto busca el cuidado responsable de los perros en la
-        comunidad de San Antonino el Alto.
-      </p>
+<button id="modoBtn">🌙 Cambiar modo</button>
+</section>
 
-      <p>
-        La problemática principal es la presencia de perros en la vía pública,
-        muchos de ellos sin esterilizar o sin vacunas.
-      </p>
 
-      <p>
-        A través de este proyecto se busca crear conciencia sobre el bienestar
-        animal y la salud comunitaria.
-      </p>
-    </section>
 
-    <footer>
-      <p>2026 - Mi nombre</p>
-    </footer>
-  </body>
+  <button id="btnInicio" onclick="volverArriba()">↑</button>
+
+
+</section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p id="mensaje2" style="display:none;"></p>
+    <button onclick="mostrarnota()">nota sobre mi</button>
+    <br><br>
+    <img src="img/ACT2_Tarjeta_Digital_Mariii_Grupo 601.png" alt="Foto personal" width="350" height="200" />
+
+    <h2>Hola, mi nombre es Maria de Jesús.</h2>
+
+    <h2>Soy estudiante en el CECYTE Emsad-35.</h2>
+
+    <h2>Me gusta lo que tiene que ver con Salud.</h2>
+
+    <!-- <img src="imagen.jpg" alt="Descripción de la imagen"> -->
+  </section>
+
+  <section id="pec">
+    <h2>Proyecto Escolar Comunitario</h2>
+    <p id="mensaje" style="display:none;"></p>
+    <button onclick="mostrarMensaje()">mensaje reflexivo</button>
+    <br><br>
+
+
+    <h3>Huellas: cuidado animal y salud comunitaria</h3>
+    <img src="img/Actividad_4_Baner_601_Marii.png" alt="Baner" width="350px" height="200px">
+
+    <p>
+      Este proyecto busca el cuidado responsable de los perros en la
+      comunidad de San Antonino el Alto.
+    </p>
+
+    <p>
+      La problemática principal es la presencia de perros en la vía pública,
+      muchos de ellos sin esterilizar o sin vacunas.
+    </p>
+
+    <p>
+      A través de este proyecto se busca crear conciencia sobre el bienestar
+      animal y la salud comunitaria.
+    </p>
+  </section>
+  <footer>
+     <section id="contacto" style="padding: 40px; background-color: #2fbac2;">
+    <h2>FORMULARIO</h2>
+    
+    <h2>Completa el Formulario</h2>
+
+    <form action="#" method="POST" style="max-width: 500px;">
+      
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required
+             style="width:100%; padding:10px; margin:10px 0;"><br>
+
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required
+             style="width:100%; padding:10px; margin:10px 0;"><br>
+            
+       <label for="Telefono">Numero de Telefono:</label><br>
+      <input type="number" id="Numero" name="number" required
+             style="width:100%; padding:10px; margin:10px 0;"><br>
+            
+    
+     <button type="submit"
+style="background-color: blue;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;">
+
+Enviar
+
+</button>
+
+   </footer>
+
+    <html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botón WhatsApp</title>
+
+   <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Botón WhatsApp -->
+  <a
+    href="https://wa.me/5215512345678?text=Hola,%20quiero%20información"
+    class="whatsapp-btn"
+    target="_blank"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>CECyTE-2026 Emsad-35
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+
+
 </html>

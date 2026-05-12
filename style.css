@@ -14,15 +14,16 @@ header {
 }s
 
 nav {
-    background-color: #34495e;
+    background-color: #4e6985;
     text-align: center;
     padding: 12px;
 }
 
 nav a {
-    color: rgb(159, 82, 236);
+    color: rgb(218, 33, 33);
+    text-align: center;
     text-decoration: none;
-    margin: 015px;
+    margin: 0 15px;
     font-weight: bold;
 }
 
@@ -31,7 +32,7 @@ nav a:hover {
 }
 
 section {
-    background-color:rgb(159, 82, 236);
+    background-color:rgb(163, 58, 238);
     margin: 20px auto;
     padding: 20px;
     width: 80%;
@@ -50,3 +51,106 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0d0d0d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transforma 0.1s, background-color 0.35;
+}
+
+button:active {
+    transform: scale (o.95);
+    background-color: #101010;
+}
+
+#mensaje {
+    display: none;
+    opacity: 0;
+    transform: transleteY(-10px);
+    transition: all 0.55 ease;
+    font-weight: bold;
+    color: #21ea0e;
+    margin-top: 10px;
+}
+
+button {background-color: white; border: 2px solid #007bff;} 
+button {background: #0b7dda; color: white;}
+
+
+body{
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        height: 2000px;
+    }
+
+    /* Botón flotante */
+    #btnArriba{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        padding: 12px 16px;
+        font-size: 20px;
+        border: none;
+        border-radius: 50%;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+    #btnArriba:hover{
+        background-color: #555;
+    }
+
+    
+  #btnInicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 18px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  }
+
+  #btnInicio:hover {
+    background-color: #0056b3;
+  }
+
+
+  whatsapp-btn {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: rgb(61, 230, 109);
+      border-radius: 50%;
+      text-align: center;
+      font-size: 35px;
+      box-shadow: 2px 2px 5px rgba(7, 228, 84, 0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
